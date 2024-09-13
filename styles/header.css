@@ -9,6 +9,7 @@ header {
   display: flex;
   align-items: center;
   padding-top: 44px;
+  padding-bottom: 22px;
   justify-content: space-between;
 }
 .logo {

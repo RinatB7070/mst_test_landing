@@ -68,6 +68,11 @@
   line-height: 150%;
   color: #FFFFFF;
   border-radius: 4px;
+  cursor: pointer;
+}
+.form__input-box button:hover {
+  background-color: #EFCFAD;
+  color: #222222;
 }
 .form_bg {
   position: relative;
