@@ -1,0 +1,147 @@
+header {
+  width: 100%;
+  position: fixed;
+  background-color: rgb(34, 34, 34, 0);;
+  transition: background-color 0.7s;
+  z-index: 9999;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 44px;
+  justify-content: space-between;
+}
+.logo {
+  text-transform: uppercase;
+  font-family: "Prata";
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  /* flex-grow: 1; */
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__link {
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin-right: 29px;
+}
+.menu__link_last {
+  margin: 0;
+}
+.limiter {
+  width: 600px;
+}
+.header_scroll {
+  background-color: rgb(34, 34, 34, 1);;
+}
+
+@media (max-width: 1820px) {
+  .limiter {
+    width: 550px;
+  }
+}
+@media (max-width: 1720px) {
+  .limiter {
+    width: 500px;
+  }
+}
+@media (max-width: 1620px) {
+  .limiter {
+    width: 510px;
+  }
+}
+@media (max-width: 1520px) {
+  .limiter {
+    width: 460px;
+  }
+}
+@media (max-width: 1440px) {
+  .header {
+    padding: 24px 0;
+  }
+  .logo {
+    font-size: 32px;
+  }
+  .menu__link {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  .limiter {
+    width: 500px;
+  }
+} 
+@media (max-width: 1390px) {
+  .limiter {
+    width: 460px;
+  }
+}
+@media (max-width: 1290px) {
+  .limiter {
+    width: 410px;
+  }
+}
+@media (max-width: 1190px) {
+  .limiter {
+    width: 450px;
+  }
+  .header {
+    padding: 20px 0;
+  }
+  .logo {
+    font-size: 28px;
+  }
+  .menu__link {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1190px) {
+  .limiter {
+    width: 410px;
+  }
+  .header {
+    padding: 15px 0;
+  }
+  .logo {
+    font-size: 26px;
+  }
+  .menu__link {
+    font-size: 10px;
+    margin-right: 8px;
+  }
+}
+@media (max-width: 960px) {
+  .limiter {
+    width: 350px;
+  }
+}
+@media (max-width: 880px) {
+  .limiter {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .limiter {
+    display: none;
+  }
+  .header {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    flex-direction: column;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+}

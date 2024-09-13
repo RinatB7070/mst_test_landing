@@ -1,0 +1,152 @@
+.form {
+  padding-bottom: 100px;
+  background-color: #282829;
+}
+.form-box {
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+}
+.form__content {
+  width: 780px;
+  padding: 72px;
+}
+.form__title {
+  display: block;
+  font-family: "Prata";
+  font-size: 54px;
+  line-height: 110%;
+  color: #38535D;
+}
+.form__input-box {
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+}
+.form__text {
+  padding: 15px 0 15px 38px;
+  margin-bottom: 13px;
+
+  border: 1px solid #D6D6D6;
+  border-radius: 4px;
+
+  font-family: "Arial";
+  font-size: 24px;
+  line-height: 150%;
+}
+.form__text::placeholder {
+  color: #55565A;
+  opacity: 70%;
+}
+.form__checkbox {
+  display: flex;
+  align-items: center;
+  padding: 13px 0;
+  margin-bottom: 15px;
+}
+.form__checkbox input {
+  height: 24px;
+  width: 24px;
+  margin-right: 16px;
+}
+.form__checkbox span {
+  font-family: "Arial";
+  font-size: 19px;
+  line-height: 150%;
+
+  color: #55565A;
+  opacity: 70%;
+}
+.form__input-box button {
+  height: 100px;
+  background-color: #282829;
+
+  text-transform: uppercase;
+  font-family: "Arial";
+  font-size: 24px;
+  line-height: 150%;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+.form_bg {
+  position: relative;
+  width: 30%;
+  background-image: url('../assets/house-bg-4.png');
+  background-position: left;
+}
+.form_bg img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-height: 650px;
+}
+@media (max-width: 1620px) {
+  .form_bg img {
+    display: none;
+  }
+}
+@media (max-width: 1440px) {
+  .form_bg {
+    display: none;
+  }
+  .form__content {
+    margin: 0 auto;
+  }
+  .form__title {
+    text-align: center
+  }
+}
+@media (max-width: 768px) {
+  .form__title {
+    font-size: 44px;
+  }
+  .form__content {
+    padding: 20px;
+  }
+  .form__text {
+    padding: 10px 0 10px 20px;
+    margin-bottom: 10px;
+  
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+  
+    font-family: "Arial";
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .form__checkbox input {
+    margin-right: 10px;
+  }
+  .form__checkbox span {
+    font-size: 14px;
+  }
+  .form__input-box button {
+    height: 60px;
+  }
+}
+@media (max-width: 400px) {
+  .form__title {
+    font-size: 28px;
+  }
+  .form__content {
+    padding: 20px;
+  }
+  .form__text {
+    padding: 5px 0 5px 10px;
+    margin-bottom: 10px;
+  
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+  
+    font-family: "Arial";
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .form__input-box {
+    padding-top: 20px;
+  }
+  .form__input-box button {
+    font-size: 20px;
+  }
+}

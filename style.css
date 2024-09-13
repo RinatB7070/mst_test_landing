@@ -1,0 +1,43 @@
+@import './styles/normalize.css';
+@import './styles/header.css';
+@import './styles/features.css';
+@import './styles/about.css';
+@import './styles/form.css';
+@import './styles/prefooter.css';
+@import './styles/footer.css';
+
+@font-face {
+  font-family: "Prata";
+  src: url('./fonts/Prata-Regular.ttf')
+}
+body { 
+  /* background-color: #282829; */
+  background-color: #222222;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+@media (max-width: 1620px) {
+  .container {
+    margin: 0 100px;
+  }
+}
+@media (max-width: 1440px) {
+  .container {
+    margin: 0 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    margin: 0 35px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 0 20px;
+  }
+}
